@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Linfords{{ " | " + title if title else '' }}</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  {% include "components/navigation.njk" %}
+{% if jumboText %}
+  {% include "components/jumbotron.njk" %}
+{% endif %}
+  {% block content %} {% endblock %}
+  {% include "components/footer.njk" %}
+  {% include "components/scripts.njk" %}
+</body>
+
+</html>

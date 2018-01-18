@@ -1,0 +1,14 @@
+Linford NJK
+För att kompilera källkoden till html behöver du
+
+Första gången bara
+installera node.js
+installera gulp-cli globalt med npm i -g gulp-cli
+navigera med terminal/cmd till samma mapp som package.json
+kör npm install
+vänta lite
+
+Workflow
+kör antingen gulp watch för att automatiskt kompilera när du ändrat (ctrl+s) en .njk-fil..
+... eller bara gulp för att kompilera en gång.
+resultatet ligger i public_html
