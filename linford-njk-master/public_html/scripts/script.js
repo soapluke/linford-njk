@@ -11,6 +11,7 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
+        
 });
 
 //Funktion för visa mer-knapp
@@ -37,3 +38,10 @@ $('a[href*="#"]').click(function(event) {
         };
       }
   });
+
+$(document).ready(function(){
+
+  $(".mailbtn").click(function(){
+         $(".contact-form").toggle();
+      });
+});
