@@ -45,3 +45,17 @@ $(document).ready(function(){
          $(".contact-form").toggle();
       });
 });
+
+$(document).ready(function(){
+  $(".slider").slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slick-next">Next</button>',
+    infinite: true,
+    speed: 800,
+    cssEase: 'ease-in-out'
+  });
+});
+  
