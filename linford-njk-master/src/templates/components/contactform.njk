@@ -1,6 +1,6 @@
 <div class="contact-form">
 	<div class="form">
-        <form id="contact-form" method="post" action="contact.php" role="form">
+        <form id="contact-form" method="post" action="mail_handler.php" name ="form">
             <div class="controls">
                 <div class="row">
                     <div class="col-md-12">
@@ -13,12 +13,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <textarea id="form_message" name="message" class="form-control" placeholder="Vad kan vi hjälpa dig med?" required="required" data-error="Skriv ett meddelande"></textarea>
+                            <textarea id="form_message" name="msg" class="form-control" placeholder="Vad kan vi hjälpa dig med?" required="required" data-error="Skriv ett meddelande"></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <input type="submit" class="btn" value="Skicka meddelande">
+                        <input type="submit" name="submit" class="btn" value="Skicka meddelande">
                     </div>
                 </div>
             </div>
