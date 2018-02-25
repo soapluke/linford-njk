@@ -197,16 +197,31 @@ h3 {
 
 /* STARTPAGE */
 
-#slideshow {
-	width: 94%;
+.slider {
+	width: 100%;
 	margin: auto;
     margin-top: 50px;
 	padding-bottom: 50px;
 }
 
-.carousel.slide {
-	width: 100%;
-	margin: auto;
+.slick-prev, .slick-next {
+    background: lightgray;
+    width: 30px;
+    height: 30px;
+    z-index: 999;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background: lightgray;
 }
 
 .startgridcontainer {
