@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Linfords | Workflow</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -308,7 +310,7 @@
 </div>
   <div class="contact-form">
 	<div class="form">
-        <form id="contact-form" method="post" action="contact.php" role="form">
+        <form id="contact-form" method="post" action="mail_handler.php" name ="form">
             <div class="controls">
                 <div class="row">
                     <div class="col-md-12">
@@ -321,12 +323,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <textarea id="form_message" name="message" class="form-control" placeholder="Vad kan vi hjälpa dig med?" required="required" data-error="Skriv ett meddelande"></textarea>
+                            <textarea id="form_message" name="msg" class="form-control" placeholder="Vad kan vi hjälpa dig med?" required="required" data-error="Skriv ett meddelande"></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <input type="submit" class="btn" value="Skicka meddelande">
+                        <input type="submit" name="submit" class="btn btn-danger" value="Skicka meddelande">
                     </div>
                 </div>
             </div>
@@ -336,6 +338,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript" src="scripts/slick.js"></script>
 <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 

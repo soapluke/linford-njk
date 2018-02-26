@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Linfords | Kontakt</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -67,64 +69,11 @@
 
   
 <div class="content">
-    <div class="form">
-        <form id="contact-form" method="post" action="contact.php" role="form">
-            <div class="messages"></div>
-            <div class="controls">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_name">Förnamn *</label>
-                            <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Förnamn är obligatoriskt.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_lastname">Efternamn *</label>
-                            <input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-error="Efternamn är obligatoriskt.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_email">Email *</label>
-                            <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Ange en giltig email.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_phone">Telefonnummer</label>
-                            <input id="form_phone" type="tel" name="phone" class="form-control">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="form_message">Meddelande *</label>
-                            <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Skriv ett meddelande"></textarea>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <input type="submit" class="btn" value="Skicka meddelande">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="text-muted"><strong>*</strong> Fätlten är obligatoriska.</p>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="karta">
-        <div class="karta-iframe">
+    <div class="row">
+        <div class="col-md-6">
+            <p>Tveka inte att kontakta oss på linford om du undrar över något. Använd knappen nere till höger för att få direkt kontakt med oss.</p>
+        </div>
+        <div class="col-md-6">
             <iframe class="iframe-karta" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8157.575329684225!2d15.174993412133787!3d59.259569043971126!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfbdca5cb0501acb0!2sLinford+Communication+AB!5e0!3m2!1sen!2sse!4v1515505833465">
             </iframe>
         </div>
@@ -158,7 +107,7 @@
 </div>
   <div class="contact-form">
 	<div class="form">
-        <form id="contact-form" method="post" action="contact.php" role="form">
+        <form id="contact-form" method="post" action="mail_handler.php" name ="form">
             <div class="controls">
                 <div class="row">
                     <div class="col-md-12">
@@ -171,12 +120,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <textarea id="form_message" name="message" class="form-control" placeholder="Vad kan vi hjälpa dig med?" required="required" data-error="Skriv ett meddelande"></textarea>
+                            <textarea id="form_message" name="msg" class="form-control" placeholder="Vad kan vi hjälpa dig med?" required="required" data-error="Skriv ett meddelande"></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <input type="submit" class="btn" value="Skicka meddelande">
+                        <input type="submit" name="submit" class="btn btn-danger" value="Skicka meddelande">
                     </div>
                 </div>
             </div>
@@ -186,6 +135,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript" src="scripts/slick.js"></script>
 <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 

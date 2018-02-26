@@ -11,17 +11,9 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
-        
-});
 
-//Funktion för visa mer-knapp
-$(document).ready(function(){
-    $(".flip").click(function(){
-        $(".panel").slideToggle("slow");
-    });
-});
-
-$('a[href*="#"]').click(function(event) {
+    //funkttion för att scrolla sidor långsamt
+    $('a[href*="#"]').click(function(event) {
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
       &&
@@ -38,24 +30,38 @@ $('a[href*="#"]').click(function(event) {
         };
       }
   });
+        
 
-$(document).ready(function(){
 
+//Funktion för visa mer-knapp
+
+    $(".flip").click(function(){
+        $(".panel").slideToggle("slow");
+    });
+
+
+
+
+
+    //gör så att montaktformuläret visas/göms närman trycker på knappen.
   $(".mailbtn").click(function(){
          $(".contact-form").toggle();
       });
-});
 
-$(document).ready(function(){
+
+
   $(".slider").slick({
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     arrows: true,
     prevArrow: '<button type="button" class="slick-prev">Previous</button>',
     nextArrow: '<button type="button" class="slick-next">Next</button>',
     infinite: true,
-    speed: 800,
-    cssEase: 'ease-in-out'
+    speed: 1000,
+    cssEase: 'ease-in-out',
+    draggable: false,
+    pauseOnFocus: false,
+    pauseOnHover: false
   });
 });
   
