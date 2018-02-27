@@ -14,6 +14,10 @@ head, body {
     width: auto;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 .navbar {
 	background-color: #FFFFFF;
     height: 50px;
@@ -167,12 +171,12 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .bread {
-    font-size: 18px;
+    font-size: 1em;
     font-family: calibri;
 }
  
 .headtext {
-    font-size: 36px;
+    font-size: 2em;
     font-family: calibri;
     text-align: center;
 }
@@ -243,35 +247,38 @@ h3 {
 
 .startgridcontainer {
     position: relative;
-	width: 95%;
 	margin: auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
 }
+.col-md-6{
+    
 
-.startgridimg {
-    border-width: 5px;
-    border-color: white;
-    border-style: solid;
+}
+.img-responsive{
+    width: 100%;
+    padding: 0;
     position: relative;
+    margin: 0;
+}
+.relative{
+    position: relative;
+}
+.startgridimg {
+   width: 100%;
+   position: relative;
+   padding: 0;
 }
 
 .startgridimg img {
-	width: 100%;
-	height: 100%;
-    float: left;
+	padding: 15px;
 }
 
 .startgridoverlay {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity:0;
+    top: 15px;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+    opacity: 0;
     background-color:rgba(0,0,0,0.5);
     -webkit-transition:all .4s ease-in-out;
     transition:all .4s ease-in-out
@@ -283,8 +290,9 @@ h3 {
 }
 
 .startgridtext {
-    margin-top: 15%;
+    margin-top: 10%;
     color: white;
+
 }
 
 .startgridoverlay p {
@@ -292,6 +300,7 @@ h3 {
     left: 0;
     margin: auto;
     width: 80%;
+     font-size: 1em;
 }
 
 /*END OF STARTPAGE*/
@@ -398,3 +407,18 @@ h3 {
 
 /* END OF SUPPORT */
 
+@media only screen and (max-width: 768px) {
+ 
+    .navbar-toggler-icon {
+        z-index: 999;
+        background-image: url(../assets/hamburger.svg);
+    }
+ 
+    .desktop-nav {
+        display: none;
+    }
+ 
+    .mobile-nav {
+        display: inline;
+    }
+}
