@@ -9,6 +9,11 @@ head, body {
     margin-top: 50px;
 }
 
+.container-jumbo{
+        width: 80%;
+        margin: auto;
+}
+
 .navbarlogo {
     height: 30px;
     width: auto;
@@ -18,7 +23,11 @@ head, body {
     display: none;
 }
 
-.navbar {
+.footer-text{
+    font-size: 0.8em;
+}
+
+.desktop-dropdown{
 	background-color: #FFFFFF;
     height: 50px;
     padding: 30px;
@@ -29,9 +38,20 @@ head, body {
     width: auto;
 }
 
-.nav-right-logo{
+.nav-ig-logo{
     list-style: none;
+    position: fixed;
+    right: 0;
+    padding: 15px;
 }
+
+.nav-fb-logo{
+    list-style: none;
+    position: fixed;
+    right: 25px;
+    padding: 15px;
+}
+
 
 li.dropdown:hover > .dropdown-menu {
 	display: inline;
@@ -73,33 +93,6 @@ li.dropdown:hover > .dropdown-menu {
 .nav-item {
 	margin-top: -5px;
     margin-bottom: -5px;
-}
-
-.footergridcontainer {
-    margin-top: 30%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 33% 33% 33%;
-    position: flex;
-    margin-top: 60px;
-    min-height: 230px;
-    border-top: solid;
-    border-width: 2px;
-    border-color: #f7f7f7;
-    padding-top: 30px;
-}
-
-.footergridcontainer p, a{
-    color: #7c7c7d;
-}
-
-.footergridcontainer h4 > a{
-    color: black;
-}
-
-.footergridcontainer a:hover{
-    color: #5a5a5b;
 }
  
 #scroll {
@@ -249,10 +242,6 @@ h3 {
     position: relative;
 	margin: auto;
 }
-.col-md-6{
-    
-
-}
 .img-responsive{
     width: 100%;
     padding: 0;
@@ -301,6 +290,14 @@ h3 {
     margin: auto;
     width: 80%;
      font-size: 1em;
+}
+
+.slideroverlay{
+    position: absolute;
+    z-index: 999;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: white;
 }
 
 /*END OF STARTPAGE*/
@@ -400,15 +397,16 @@ h3 {
 
 /* Innehåll mellan parallaxerna på support GLOBAL */
 .content1, .content2, .content3, .content4, .content5 {
-    width: 100%;
-    padding: 150px;
-   
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
-
 /* END OF SUPPORT */
 
 @media only screen and (max-width: 768px) {
  
+    
     .navbar-toggler-icon {
         z-index: 999;
         background-image: url(../assets/hamburger.svg);
@@ -419,6 +417,50 @@ h3 {
     }
  
     .mobile-nav {
-        display: inline;
+        display: block;
     }
+ 
+    .collapse, .navbar-collapse {
+        background-color: black;
+        opacity: 0.8;
+        margin-top: 15px;
+    }
+ 
+    .navbar {
+        padding: 0px;
+        background-color: white;
+    }
+ 
+    .dropdown-menu {
+        margin: 0;
+        padding: 0;
+    }
+ 
+    .mobile-nav a {
+        color: white;
+    }
+ 
+    .nav li {
+        margin: 5px 5px 5px 25px;
+    }
+
+    .startgridoverlay {
+        opacity: 1;
+    }
+
+    .content1, .content2, .content3, .content4, .content5{
+        width: 90%;
+    }
+
+   
+    .container-jumbo{
+        width: 90%;
+        margin: auto;
+    }
+
+
 }
+
+
+
+

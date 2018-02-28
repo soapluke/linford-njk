@@ -63,5 +63,9 @@ $(document).ready(function(){
     pauseOnFocus: false,
     pauseOnHover: false
   });
+
+  $(".dropdown-item").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
 });
   

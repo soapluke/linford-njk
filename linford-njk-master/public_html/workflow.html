@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Linfords | Workflow</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/slick.css"/>
@@ -11,57 +12,136 @@
 </head>
 
 <body>
-  <nav class="navbar fixed-top navbar-expand lg navbar-light">
-    <a class="navbar-brand" href="/">
-        <img class="navbarlogo" src="assets/linford_logo.svg" alt="Linford">
-    </a>
-    <div>
-        <ul class="nav navbar-nav">
-            <li class="dropdown" data-hover="dropdown">
-                <a class="nav-item nav-link nav-top" id="link1" href="workplace.html">Workplace</a>
-                <ul class="dropdown-menu">
-                        <li><a class="nav-item nav-link" href="workplace.html#content1">Remote Care Workplace</a></li>
-                        <li><a class="nav-item nav-link" href="workplace.html#content2">Server</a></li>
-                        <li><a class="nav-item nav-link" href="workplace.html#content3">Back-ups</a></li>
-                        <li><a class="nav-item nav-link" href="workplace.html#content4">Antivirus</a></li>
-                        <li><a class="nav-item nav-link" href="workplace.html#content5">Helpdesk</a></li>
-                        <li><a class="nav-item nav-link" href="workplace.html#content6">Workstation</a></li>
-                    </ul>
-            </li>
-            <li class="dropdown" data-hover="dropdown" >
-                <a class="nav-item nav-link" id="link2" href="workflow.html">Workflow</a>
+  <!-- DESKTOP NAVBAR -->
+<div class="desktop-nav">
+    <div class="row">
+    <nav class="navbar fixed-top navbar-expand navbar-toggleable-md lg navbar-light desktop-dropdown">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+            <img class="navbarlogo" src="assets/linford_logo.svg" alt="Linford">
+        </a>
+        <div class="" id="navbardropdown">
+            <ul class="navbar-nav">
+                <li class="dropdown" data-hover="dropdown">
+                    <a class="nav-item nav-link nav-top" id="link1" href="workplace.html">Workplace</a>
                     <ul class="dropdown-menu">
-                        <li><a class="nav-item nav-link" href="workflow.html#content1">Fakturahantering</a></li>
-                        <li><a class="nav-item nav-link" href="workflow.html#content2">Tolk</a></li>
-                        <li><a class="nav-item nav-link" href="workflow.html#content3">Mobil arbetsorder</a></li>
-                        <li><a class="nav-item nav-link" href="workflow.html#content4">Tidrapport</a></li>
-                        <li><a class="nav-item nav-link" href="workflow.html#content5">Avtalshantering</a></li>
-                        <li><a class="nav-item nav-link" href="workflow.html#content6">Arkiv</a></li>
-                        <li><a class="nav-item nav-link" href="workflow.html#content7">Tillbehör</a></li>
-                        <li><a class="nav-item nav-link" href="workflow.html#content8">CRM</a></li>
-                        <li><a class="nav-item nav-link" href="workflow.html#content9">Hårdvara</a></li>
-                    </ul>
-            </li>
-            <li><a class="nav-item nav-link" id="link3" href="kontakt.html">Kontakt</a></li>
-            <li class="dropdown" datahover="dropdown">
-                    <a class="nav-item nav-link naven" id="link4" href="support.html">Support</a>
-                        <ul class="dropdown-menu">
-                                <li><a class="nav-item nav-link" href="support.html#content1">Helpdesk</a></li>
-                                <li><a class="nav-item nav-link" href="support.html#content2">Fjärrsupport</a></li>
-                                <li><a class="nav-item nav-link" href="support.html#content3">Lokalsupport</a></li>
+                            <li><a class="nav-item nav-link" href="workplace.html#content1">Remote Care Workplace</a></li>
+                            <li><a class="nav-item nav-link" href="workplace.html#content2">Server</a></li>
+                            <li><a class="nav-item nav-link" href="workplace.html#content3">Back-ups</a></li>
+                            <li><a class="nav-item nav-link" href="workplace.html#content4">Antivirus</a></li>
+                            <li><a class="nav-item nav-link" href="workplace.html#content5">Helpdesk</a></li>
+                            <li><a class="nav-item nav-link" href="workplace.html#content6">Workstation</a></li>
                         </ul>
                 </li>
-            <li><a target="_blank" class="nav-item nav-link" id="link5" href="http://www.google.com">Webbshop</a></li>
-        </ul>
-    </div>
+                <li class="dropdown" data-hover="dropdown" >
+                    <a class="nav-item nav-link" id="link2" href="workflow.html">Workflow</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-item nav-link" href="workflow.html#content1">Fakturahantering</a></li>
+                            <li><a class="nav-item nav-link" href="workflow.html#content2">Tolk</a></li>
+                            <li><a class="nav-item nav-link" href="workflow.html#content3">Mobil arbetsorder</a></li>
+                            <li><a class="nav-item nav-link" href="workflow.html#content4">Tidrapport</a></li>
+                            <li><a class="nav-item nav-link" href="workflow.html#content5">Avtalshantering</a></li>
+                            <li><a class="nav-item nav-link" href="workflow.html#content6">Arkiv</a></li>
+                            <li><a class="nav-item nav-link" href="workflow.html#content7">Tillbehör</a></li>
+                            <li><a class="nav-item nav-link" href="workflow.html#content8">CRM</a></li>
+                            <li><a class="nav-item nav-link" href="workflow.html#content9">Hårdvara</a></li>
+                        </ul>
+                </li>
+                <li><a class="nav-item nav-link" id="link3" href="kontakt.html">Kontakt</a></li>
+                <li class="dropdown" datahover="dropdown">
+                        <a class="nav-item nav-link naven" id="link4" href="support.html">Support</a>
+                            <ul class="dropdown-menu">
+                                    <li><a class="nav-item nav-link" href="support.html#content1">Helpdesk</a></li>
+                                    <li><a class="nav-item nav-link" href="support.html#content2">Fjärrsupport</a></li>
+                                    <li><a class="nav-item nav-link" href="support.html#content3">Lokalsupport</a></li>
+                            </ul>
+                    </li>
+                <li><a target="_blank" class="nav-item nav-link" id="link5" href="http://www.google.com">Webbshop</a></li>
+            </ul>
+        </div>
+        
+                <li class="nav-right-logo">
+                    <a href="https://www.instagram.com/linfordab/">
+                        <img class="sm-logo" src="assets/iglogo.svg" alt="Instagram"/>
+                    </a>
+                </li>
+                <li class="nav-right-logo">
+                    <a href="https://www.facebook.com/linfordab/">
+                        <img class="sm-logo" src="assets/fblogo.svg" alt="Instagram"/>
+                    </a>
+                </li>
+            </div>
+        </div>    
+    </nav>
+</div>
+
+<!-- MOBILE NAVBAR -->
+
+<div class="mobile-nav">
+<nav class="navbar fixed-top navbar-toggleable-sm bg-faded">
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img class="navbarlogo" src="assets/linford_logo.svg" alt="Linford">
+        </a>
+        <div class="collapse navbar-collapse" id="collapsingNavbar">
+            <ul class="nav navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Workplace</a>
+                    <div class="dropdown-menu">
+                            <a class="dropdown-item" href="workplace.html#content1">Remote Care Workplace</a>
+                            <a class="dropdown-item" href="workplace.html#content2">Server</a>
+                            <a class="dropdown-item" href="workplace.html#content3">Back-ups</a>
+                            <a class="dropdown-item" href="workplace.html#content4">Antivirus</a>
+                            <a class="dropdown-item" href="workplace.html#content5">Helpdesk</a>
+                            <a class="dropdown-item" href="workplace.html#content6">Workstation</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Workflow</a>
+                    <div class="dropdown-menu">
+                            <a class="dropdown-item" href="workflow.html#content1">Fakturahantering</a>
+                            <a class="dropdown-item" href="workflow.html#content2">Tolk</a>
+                            <a class="dropdown-item" href="workflow.html#content3">Mobil arbetsorder</a>
+                            <a class="dropdown-item" href="workflow.html#content4">Tidrapport</a>
+                            <a class="dropdown-item" href="workflow.html#content5">Avtalshantering</a>
+                            <a class="dropdown-item" href="workflow.html#content6">Arkiv</a>
+                            <a class="dropdown-item" href="workflow.html#content7">Tillbehör</a>
+                            <a class="dropdown-item" href="workflow.html#content8">CRM</a>
+                            <a class="dropdown-item" href="workflow.html#content9">Hårdvara</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Support</a>
+                    <div class="dropdown-menu">
+                            <a class="dropdown-item" href="workflow.html#content1">Helpdesk</a>
+                            <a class="dropdown-item" href="workflow.html#content2">Fjärrsupport</a>
+                            <a class="dropdown-item" href="workflow.html#content3">Lokalsupport</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="Kontakt.html">Kontakt</a>
+                    <div class="dropdown-item"></div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="https://www.google.com">Webbshop</a>
+                    <div class="dropdown-item"></div>
+                </li>
+            </ul>
+        </div>
 </nav>
+</div>
+
 
 <!-- TOPBTN -->
 <a href="#" id="scroll" style="display: none;"><span></span></a>
 <a class="mailbtn"><img class="mailimg" src="assets/mail.svg"></a>
 
   <div class="jumbotron jumbotron-fluid">
-    <div class="container">
+    <div class="container-jumbo">
         <h1 class="display-3">Workflow</h1>
         <p class="lead">Glömt allt krångel med dokument och papper - vi ordnar allt.</p>
     </div>
@@ -304,11 +384,11 @@
 	    </div>
 	    <div class ="col-sm-4 text-center">
 	        <h4>Sociala medier</h4>
-	        <a href="https://twitter.com">Twitter</a></br>
-	        <a href="https://twitter.com">Facebook</a></br>
-	        <a href="https://twitter.com">Instagram</a>
+	        <a href="https://www.facebook.com/linfordab" target="_blank">Facebook</a></br>
+	        <a href="https://www.instagram.com/linfordab/" target="_blank">Instagram</a>
 	    </div>
 	</div>
+	<p class="text-center footer-text">Skapad av Team Linford.</p>
 </footer>
   <div class="contact-form">
 	<div class="form">
