@@ -52,6 +52,13 @@ head, body {
     padding: 15px;
 }
 
+.nav-ln-logo{
+    list-style: none;
+    position: fixed;
+    right: 50px;
+    padding: 15px;
+}
+
 
 li.dropdown:hover > .dropdown-menu {
 	display: inline;
@@ -302,37 +309,21 @@ h3 {
 
 /*END OF STARTPAGE*/
 
-/* OM OSS */
+/* KONTAKT */
  
 .content {
     width: 80%;
     margin: auto;
 }
- 
-.om-oss-jumbotron{
-    background-image: url("../assets/3.jpg");
-}
- 
+
 .iframe-karta{
     height: 25em;
     width: 100%;
     border-style: none;
 }
-.om-oss-parallax {
-    /* The image used */
-   
-    /* Set a specific height */
-    height: 500px;
- 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
  
  
-/* END OF OM OSS */
+/* END OF KONTAKT  */
 
 /* SUPPORT */
 
@@ -403,6 +394,19 @@ h3 {
     padding-bottom: 80px;
 }
 /* END OF SUPPORT */
+
+/* FOOTER */
+
+.footerlinks a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.footerlinks a:hover {
+    text-decoration: underline;
+}
+
+/* END OF FOOTER */
 
 @media only screen and (max-width: 768px) {
  
