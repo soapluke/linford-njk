@@ -14,7 +14,6 @@
 <body>
   <!-- DESKTOP NAVBAR -->
 <div class="desktop-nav">
-    <div class="row">
     <nav class="navbar fixed-top navbar-expand navbar-toggleable-md lg navbar-light desktop-dropdown">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse">
             <span class="navbar-toggler-icon"></span>
@@ -22,7 +21,7 @@
         <a class="navbar-brand" href="index.html">
             <img class="navbarlogo" src="assets/linford_logo.svg" alt="Linford">
         </a>
-        <div class="" id="navbardropdown">
+        <div class="col-sm-10" id="navbardropdown">
             <ul class="navbar-nav">
                 <li class="dropdown" data-hover="dropdown">
                     <a class="nav-item nav-link nav-top" id="link1" href="workplace.html">Workplace</a>
@@ -61,30 +60,27 @@
                 <li><a target="_blank" class="nav-item nav-link" id="link5" href="http://www.google.com">Webbshop</a></li>
             </ul>
         </div>
-        
-                <li class="nav-right-logo">
-                    <a href="https://www.instagram.com/linfordab/">
-                        <img class="sm-logo" src="assets/iglogo.svg" alt="Instagram"/>
-                    </a>
-                </li>
-                <li class="nav-right-logo">
-                    <a href="https://www.facebook.com/linfordab/">
-                        <img class="sm-logo" src="assets/fblogo.svg" alt="Instagram"/>
-                    </a>
-                </li>
-            </div>
-        </div>    
+            <li class="nav-ig-logo">
+                <a href="https://www.instagram.com/linfordab/">
+                    <img class="sm-logo" src="assets/iglogo.svg" alt="Instagram"/>
+                </a>
+            </li>
+            <li class="nav-fb-logo">
+                <a href="https://www.facebook.com/linfordab/">
+                    <img class="sm-logo" src="assets/fblogo.svg" alt="Instagram"/>
+                </a>
+            </li>
     </nav>
 </div>
 
 <!-- MOBILE NAVBAR -->
 
 <div class="mobile-nav">
-<nav class="navbar fixed-top navbar-toggleable-sm bg-faded">
-        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+<nav class="navbar fixed-top bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-expanded="false">
             <span class="navbar-toggler-icon"> </span>
         </button>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img class="navbarlogo" src="assets/linford_logo.svg" alt="Linford">
         </a>
         <div class="collapse navbar-collapse" id="collapsingNavbar">
@@ -114,21 +110,19 @@
                             <a class="dropdown-item" href="workflow.html#content9">Hårdvara</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Support</a>
                     <div class="dropdown-menu">
-                            <a class="dropdown-item" href="workflow.html#content1">Helpdesk</a>
-                            <a class="dropdown-item" href="workflow.html#content2">Fjärrsupport</a>
-                            <a class="dropdown-item" href="workflow.html#content3">Lokalsupport</a>
+                            <a class="dropdown-item" href="support.html#content1">Helpdesk</a>
+                            <a class="dropdown-item" href="support.html#content2">Fjärrsupport</a>
+                            <a class="dropdown-item" href="support.html#content3">Lokalsupport</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="Kontakt.html">Kontakt</a>
-                    <div class="dropdown-item"></div>
-                </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
                     <a class="nav-link" href="https://www.google.com">Webbshop</a>
-                    <div class="dropdown-item"></div>
                 </li>
             </ul>
         </div>
@@ -385,7 +379,8 @@
 	    <div class ="col-sm-4 text-center">
 	        <h4>Sociala medier</h4>
 	        <a href="https://www.facebook.com/linfordab" target="_blank">Facebook</a></br>
-	        <a href="https://www.instagram.com/linfordab/" target="_blank">Instagram</a>
+	        <a href="https://www.instagram.com/linfordab/" target="_blank">Instagram</a></br>
+	        <a href="https://www.linkedin.com/company/linford-communication-ab/" target="_blank">LinkedIn</a>
 	    </div>
 	</div>
 	<p class="text-center footer-text">Skapad av Team Linford.</p>
