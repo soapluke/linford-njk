@@ -1,5 +1,7 @@
 //Knapp för att komma till toppen av sidan
 $(document).ready(function(){
+
+  var flag = true;
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
             $('#scroll').fadeIn();
@@ -44,10 +46,25 @@ $(document).ready(function(){
 
 
     //gör så att montaktformuläret visas/göms närman trycker på knappen.
-  $(".mailbtn").click(function(){
-         $(".contact-form").toggle();
-      });
+    $(".mailbtn").click(function(){
+    
+    if ($(this).text() == 'Kontakta oss!') {
+        $(this).text("Stäng");
+        $('.ctformswedish').show();
+    } else if ($(this).text() == 'Contact us!') {
+        $(this).text("Close");
+        $('.ctformenglish').show();
+        $('.ctformswedish').hide();
+    } else if ($(this).text() == 'Stäng') {
+        $(this).text("Kontakta oss!");
+        $('.ctformswedish').hide();
+    } else if ($(this).text() == 'Close') {
+        $(this).text("Contact us!");
+        $('.ctformenglish').hide();
+    }
 
+     // $(".contact-form").toggle();
+  });
 
 
   $(".slider").slick({
@@ -67,5 +84,29 @@ $(document).ready(function(){
   $(".dropdown-item").click(function(event) {
     $(".navbar-collapse").collapse('hide');
   });
+
+  //Language switch
+
+    if(flag) {
+      $(".english").hide();
+      flag=false;
+    }
+  
+    
+  
+
+  $("#switch-english").click(function() {
+    $(".swedish").hide();
+    $(".english").show();
+    flag=false;
+  });
+
+  $("#switch-swedish").click(function() {
+    $(".english").hide();
+    $(".swedish").show();
+  });
+
 });
+
+
   
