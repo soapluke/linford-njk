@@ -1,7 +1,6 @@
 //Knapp för att komma till toppen av sidan
 $(document).ready(function(){
 
-  var flag = true;
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
             $('#scroll').fadeIn();
@@ -39,6 +38,27 @@ $(document).ready(function(){
 
     $(".flip").click(function(){
         $(".panel").slideToggle("slow");
+    });
+
+
+//Dropdowns för mobile-nav
+
+    $(".navbar-toggler").click(function(){
+        $(".dropdown-menu-mobile-workplace").hide();
+        $(".dropdown-menu-mobile-workflow").hide();
+        $(".dropdown-menu-mobile-support").hide();
+    });
+
+    $(".dropdown-toggle-mobile-workplace").click(function(){
+        $(".dropdown-menu-mobile-workplace").slideToggle("slow");
+    });
+
+    $(".dropdown-toggle-mobile-workflow").click(function(){
+        $(".dropdown-menu-mobile-workflow").slideToggle("slow");
+    });
+
+    $(".dropdown-toggle-mobile-support").click(function(){
+        $(".dropdown-menu-mobile-support").slideToggle("slow");
     });
 
 
@@ -87,11 +107,9 @@ $(document).ready(function(){
 
   //Language switch
 
-    if(flag) {
-      $(".english").hide();
-      flag=false;
-    }
-  
+
+  $(".english").hide();
+
     
   
 
