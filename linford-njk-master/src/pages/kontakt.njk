@@ -6,7 +6,31 @@
 <div class="content">
     <div class="row">
         <div class="col-md-6">
-            <p>Något slags formulär.</p>
+                <div class="form1">
+                        <form id="contact-form" method="post" action="mail_handler.php" name ="form">
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input id="form_email" type="email" name="email" class="form-control" required="required" placeholder="Email-adress" data-error="Ange en giltig email.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea id="form_message1" name="msg" class="form-control" placeholder="Vad kan vi hjälpa dig med?" required="required" data-error="Skriv ett meddelande."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" name="submit" class="btn btn-danger" value="Skicka meddelande">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                </div>   
         </div>
         <div class="col-md-6">
             <iframe class="iframe-karta" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8157.575329684225!2d15.174993412133787!3d59.259569043971126!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfbdca5cb0501acb0!2sLinford+Communication+AB!5e0!3m2!1sen!2sse!4v1515505833465">
