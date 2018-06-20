@@ -100,7 +100,6 @@ head, body {
     	margin-top: 10px;
     }
 
-
     .dropdown:hover .dropdown-menu {
         max-height: 600px;
         opacity: 1;
@@ -129,7 +128,7 @@ head, body {
 }
 
 #link1, #link2, #link3, #link4, #link5{
-    padding-right: 30px;
+    /*padding-right: 30px;*/
 }
 
 .nav-item {
@@ -523,9 +522,9 @@ h3 {
     margin-top: 50px;
 }
 
-img {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.clevertouchimg {
+    width: 50%;
+    height: 50%;
 }
 
 /*END OF MULTIMEDIA*/
@@ -595,12 +594,19 @@ img {
         width: 90%;
     }
 
-   
     .container-jumbo{
         width: 90%;
         margin: auto;
     }
 
+    .table {
+        display: none;
+    }
+
+    /* FONTSIZE PÅ JUMBO I MOBILEN */
+    .display-3 {
+        font-size: 3em;
+    }
 
 }
 
