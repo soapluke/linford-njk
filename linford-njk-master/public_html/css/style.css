@@ -479,6 +479,35 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*Parallax:om*/
+.parallax7 {
+    /* The image used */
+    background-image: url("../assets/7.jpg");
+ 
+    /* Set a specific height */
+    height: 500px;
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Parallax:media*/
+.parallax8 {
+    /* The image used */
+    background-image: url("../assets/media1.jpg");
+ 
+    /* Set a specific height */
+    height: 500px;
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Innehåll mellan parallaxerna på support GLOBAL */
 .content1, .content2, .content3, .content4, .content5 {
@@ -488,6 +517,18 @@ h3 {
     padding-bottom: 80px;
 }
 /* END OF SUPPORT */
+
+/*MULTIMEDIA*/
+.row {
+    margin-top: 50px;
+}
+
+img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*END OF MULTIMEDIA*/
 
 /* FOOTER */
 
